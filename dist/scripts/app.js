@@ -4,7 +4,7 @@ const squiggleSetup = {
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'squiggle.json',
+  path: 'scripts/squiggle.json',
   name: 'squiggle'
  
 }
