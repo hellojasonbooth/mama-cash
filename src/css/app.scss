@@ -1,0 +1,92 @@
+@import "reset";
+
+@import url("https://use.typekit.net/mzm1xcc.css");
+
+
+body {
+    background-color: var(--pink);
+    font-family: benton-sans;
+    font-style: normal;
+    color: var(--pink);
+    font-size: 20px;
+}
+
+:root {
+  --pink: #FDDDD7;
+  --green: #13655D;
+  
+  --text-black: 800;
+}
+
+#squiggle {
+    position: absolute;
+    right: -50vw;
+    top: 200px;
+    width: 120vw;
+    height: 382px;
+}
+
+
+section.blank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 100vh;
+}
+section.pink {
+    background-color: var(--pink);
+}
+section.green {
+    background-color: var(--green);
+}
+
+section.interaction {
+    position: relative;
+    overflow: hidden;
+    min-height: 120vh;
+}
+section.interaction h2 {
+    max-width: 560px;
+    text-transform: uppercase;
+    color: var(--green);
+    font-size: 80px;
+    line-height: 0.9;
+    text-align: center;
+    letter-spacing: -0.03em;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: benton-sans;
+    font-weight: var(--text-black);
+    font-style: normal;
+}
+section.interaction h2 span {
+    display: inline-block;
+    transform: translateY(150%) rotate(7deg);
+    transition: transform 1.4s cubic-bezier(.72,0,.01,1);
+}
+section.interaction h2 span.active {
+    transform: translateY(10%) rotate(0deg);
+}
+
+div.title {
+    padding-top: 200px;
+}
+
+section.interaction div img {
+    max-width: 500px;
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-60%, 120%) rotate(0deg);
+    z-index: -1;
+    display: inline-block;
+    transition: transform 1.6s cubic-bezier(.72,0,.01,1);
+}
+section.interaction div img.active {
+    transform: translate(-60%, -95%) rotate(7deg);
+}
